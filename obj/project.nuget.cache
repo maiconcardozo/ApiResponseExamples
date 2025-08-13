@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "qGg4BiQdyLs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\8.0.0\\microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\scrutor\\3.3.0\\scrutor.3.3.0.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.3\\swashbuckle.aspnetcore.9.0.3.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\9.0.3\\swashbuckle.aspnetcore.annotations.9.0.3.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.filters\\9.0.0\\swashbuckle.aspnetcore.filters.9.0.0.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.filters.abstractions\\9.0.0\\swashbuckle.aspnetcore.filters.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.3\\swashbuckle.aspnetcore.swagger.9.0.3.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.3\\swashbuckle.aspnetcore.swaggergen.9.0.3.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.3\\swashbuckle.aspnetcore.swaggerui.9.0.3.nupkg.sha512",
+    "C:\\Users\\maicon.cardozo\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

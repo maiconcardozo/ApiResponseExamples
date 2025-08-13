@@ -1,0 +1,247 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "ApiResponseExamplesDemo",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Items/{id}": {
+      "put": {
+        "tags": [
+          "Items"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyPayload"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyPayload"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyPayload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sucesso com envelope padrão",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyDTOSuccessEnvelope"
+                },
+                "example": {"type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.1","title":"OK","status":200,"detail":"Requisição realizada com sucesso.","instance":"/exemplo/instancia","data":{"userId":123,"userName":"exemplo.exemplo","email":"exemplo.exemplo@exemplo.com"}}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyDTOSuccessEnvelope"
+                },
+                "example": {"type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.1","title":"OK","status":200,"detail":"Requisição realizada com sucesso.","instance":"/exemplo/instancia","data":{"userId":123,"userName":"exemplo.exemplo","email":"exemplo.exemplo@exemplo.com"}}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyDTOSuccessEnvelope"
+                },
+                "example": {"type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.1","title":"OK","status":200,"detail":"Requisição realizada com sucesso.","instance":"/exemplo/instancia","data":{"userId":123,"userName":"exemplo.exemplo","email":"exemplo.exemplo@exemplo.com"}}
+              }
+            }
+          },
+          "400": {
+            "description": "Erro de validação",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Requisição inválida","status":400,"detail":"Um ou mais erros de validação ocorreram.","instance":"/exemplo/instancia"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Requisição inválida","status":400,"detail":"Um ou mais erros de validação ocorreram.","instance":"/exemplo/instancia"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Requisição inválida","status":400,"detail":"Um ou mais erros de validação ocorreram.","instance":"/exemplo/instancia"}
+              }
+            }
+          },
+          "401": {
+            "description": "Não autorizado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Não autorizado","status":401,"detail":"Falha na autenticação: credenciais inválidas.","instance":"/exemplo/instancia"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Não autorizado","status":401,"detail":"Falha na autenticação: credenciais inválidas.","instance":"/exemplo/instancia"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Não autorizado","status":401,"detail":"Falha na autenticação: credenciais inválidas.","instance":"/exemplo/instancia"}
+              }
+            }
+          },
+          "404": {
+            "description": "Recurso não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Não encontrado","status":404,"detail":"O recurso solicitado não foi encontrado.","instance":"/exemplo/instancia"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Não encontrado","status":404,"detail":"O recurso solicitado não foi encontrado.","instance":"/exemplo/instancia"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Não encontrado","status":404,"detail":"O recurso solicitado não foi encontrado.","instance":"/exemplo/instancia"}
+              }
+            }
+          },
+          "500": {
+            "description": "Erro inesperado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.6.1","title":"Erro interno do servidor","status":500,"detail":"Ocorreu um erro inesperado.","instance":"/exemplo/instancia"}
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.6.1","title":"Erro interno do servidor","status":500,"detail":"Ocorreu um erro inesperado.","instance":"/exemplo/instancia"}
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                },
+                "example": {"type":"https://tools.ietf.org/html/rfc7231#section-6.6.1","title":"Erro interno do servidor","status":500,"detail":"Ocorreu um erro inesperado.","instance":"/exemplo/instancia"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MyDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "atualizadoEm": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MyDTOSuccessEnvelope": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/MyDTO"
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MyPayload": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      }
+    }
+  }
+}
