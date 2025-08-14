@@ -46,7 +46,6 @@ C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\Ap
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.csproj.CoreCompileInputs.cache
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.sourcelink.json
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.dll
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\refint\ApiResponseExamplesDemo.dll
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.xml
@@ -79,3 +78,4 @@ C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\st
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiRespo.8E847926.Up2Date
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.genruntimeconfig.cache
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ref\ApiResponseExamplesDemo.dll
+C:\Users\maicon.cardozo\source\repos\ApiResponseExamplesDemo\bin\Debug\net8.0\FluentValidation.dll

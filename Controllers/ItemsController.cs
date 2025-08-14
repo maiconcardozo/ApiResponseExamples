@@ -1,5 +1,6 @@
 using ApiResponseExamplesDemo.Models;
 using Authentication.API.Swagger;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
@@ -10,6 +11,13 @@ namespace ApiResponseExamplesDemo.Controllers;
 [Route("api/[controller]")]
 public class ItemsController : ControllerBase
 {
+    private readonly IValidator<MyPayload> _validator;
+
+    public ItemsController(IValidator<MyPayload> validator)
+    {
+        _validator = validator;
+    }
+
     [HttpPut("{id:int}")]
     [SwaggerResponse(StatusCodes.Status200OK, Type = typeof(SuccessEnvelope<MyDTO>), Description = "Sucesso com envelope padrão")]
     [SwaggerResponse(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails), Description = "Erro de validação")]
@@ -25,6 +33,15 @@ public class ItemsController : ControllerBase
     {
         try
         {
+            var validationResult = _validator.Validate(payload);
+
+            if (!validationResult.IsValid)
+            {
+                if (!validationResult.IsValid)
+                {
+                    throw new InvalidOperationException("Payload inválido: " + string.Join("; ", validationResult.Errors.Select(e => $"{e.PropertyName}: {e.ErrorMessage}")));
+                }
+            }
             var existingItem = id == 999 ? null : new MyDTO { Id = id, Nome = "Nome Antigo", AtualizadoEm = DateTime.UtcNow.AddDays(-1) };
 
             if (existingItem == null)
@@ -38,8 +55,9 @@ public class ItemsController : ControllerBase
 
             var successResponse = SuccessEnvelope<MyDTO>.Ok(existingItem, HttpContext.Request.Path);
             return Ok(successResponse);
-        }
 
+
+        }
         catch (InvalidOperationException ex)
         {
             var problemDetails = ProblemDetailsExampleFactory.ForBadRequest(ex.Message, HttpContext.Request.Path);
