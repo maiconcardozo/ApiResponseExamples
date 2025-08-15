@@ -7,7 +7,7 @@ Demo simples mostrando:
 ## Rodar
 
 ```bash
-git clone https://github.com/maiconcardozo/ApiResponseExamples
+git clone https://github.com/maiconcardozo/ApiResponseExamplesDemo
 cd ApiResponseExamplesDemo
 dotnet restore
 dotnet run --project src/Api
@@ -21,4 +21,3 @@ https://localhost:5001/swagger
 
 ---
 #api #swagger #cleanarchitecture #devexperience #backend
-

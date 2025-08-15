@@ -20,6 +20,9 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+app.UseMiddleware<Authentication.API.Middleware.SwaggerAuthMiddleware>();
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

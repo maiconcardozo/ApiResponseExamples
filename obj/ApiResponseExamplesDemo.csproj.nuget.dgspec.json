@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj": {}
+    "C:\\Users\\maicon.cardozo\\Source\\Repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj": {
+    "C:\\Users\\maicon.cardozo\\Source\\Repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj",
+        "projectUniqueName": "C:\\Users\\maicon.cardozo\\Source\\Repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj",
         "projectName": "ApiResponseExamplesDemo",
-        "projectPath": "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj",
+        "projectPath": "C:\\Users\\maicon.cardozo\\Source\\Repos\\ApiResponseExamplesDemo\\ApiResponseExamplesDemo.csproj",
         "packagesPath": "C:\\Users\\maicon.cardozo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maicon.cardozo\\source\\repos\\ApiResponseExamplesDemo\\obj\\",
+        "outputPath": "C:\\Users\\maicon.cardozo\\Source\\Repos\\ApiResponseExamplesDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

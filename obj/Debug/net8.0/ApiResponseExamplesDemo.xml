@@ -4,5 +4,10 @@
         <name>ApiResponseExamplesDemo</name>
     </assembly>
     <members>
+        <member name="F:Authentication.API.Middleware.SwaggerAuthMiddleware._next">
+            <summary>
+            Valores fixos para autenticação básica
+            </summary>
+        </member>
     </members>
 </doc>
