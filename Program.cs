@@ -2,6 +2,9 @@ using ApiResponseExamplesDemo.Models;
 using Authentication.API.Swagger;
 using Authentication.Login.Util;
 using Swashbuckle.AspNetCore.Filters;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +19,27 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.EnableAnnotations();
     c.ExampleFilters();
+});
+
+// JWT Authentication setup
+var jwtSecret = "super_secret_jwt_key_1234567890";
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = "ApiResponseExamplesDemo",
+        ValidAudience = "ApiResponseExamplesDemoUsers",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret))
+    };
 });
 
 var app = builder.Build();
@@ -37,6 +61,9 @@ if (app.Environment.IsDevelopment())
         await next();
     });
 }
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

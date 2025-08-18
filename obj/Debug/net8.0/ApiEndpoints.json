@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "ApiResponseExamplesDemo.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiResponseExamplesDemo.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiResponseExamplesDemo.Controllers.AuthController",
+    "Method": "Protected",
+    "RelativePath": "api/Auth/protected",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiResponseExamplesDemo.Controllers.ItemsController",
     "Method": "Update",
     "RelativePath": "api/Items/{id}",

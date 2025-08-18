@@ -79,3 +79,11 @@ C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\Ap
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ApiResponseExamplesDemo.genruntimeconfig.cache
 C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\obj\Debug\net8.0\ref\ApiResponseExamplesDemo.dll
 C:\Users\maicon.cardozo\source\repos\ApiResponseExamplesDemo\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\maicon.cardozo\Source\Repos\ApiResponseExamplesDemo\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
