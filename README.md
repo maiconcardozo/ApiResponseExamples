@@ -13,7 +13,7 @@ dotnet restore
 dotnet run --project src/Api
 ```
 
-Swagger:
+Swagger
 ```
 https://localhost:5001/swagger
 ```
