@@ -1,6 +1,6 @@
 # API Response Examples Demo
 
-Demo simples mostrando:
+Demo simples mostrando
 - Envelope de resposta padronizado
 - Examples no Swagger (OpenAPI) para sucesso e erro
   
